@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Medias Dinâmicas</title>
+</head>
+<body>
+    <h1>Medias Dinâmica</h1>
+    <h2>Adaptando a imagem para diferentes tamanhos de telas</h2>
+    <p>Tente abrir este site em dispositivos com tamanhos de telas difentes ou simplismente aumente e diminua o tamanho da tela.</p>
+    <p>
+        <picture>
+            <!-- a ordem importa! e a primeira sempre será a imagem que será carregada por primiro nesse caso a imagem G-->
+            <source media="(max-width: 650px )" srcset="Imagens/img-p.png">
+            <source media="(max-width: 1050px)" srcset="Imagens/img-m.png">
+            <img src="Imagens/img-g.png" alt="Imagem Flexivel">
+        </picture>
+    </p>
+    <h2>Reproduzindo audios em HTML5</h2>
+    <p>
+        <audio controls> <!--Interessante ter varios formatos pois nem todo navegador suporta todos os formatos-->
+            <source src="media/guanacast-33.mp3" type="audio/mpeg">
+            <source src="media/guanacast-33.ogg" type="audio/ogg">
+            Seu navegador não suporta o elemento de áudio. <a href="media/guanacast-33.mp3">Clique aqui para baixar!</a>
+        </audio>
+    </p>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>
+        <video width="300px" poster="Imagens/limoes-capa.png" controls><!--Interessante ter varios formatos pois nem todo navegador suporta todos os formatos-->
+            <source src="media/meu-video.mp4" type="video/mp4">
+            <source src="media/meu-video.webm" type="video/webm">
+            <source src="media/meu-video.ogv" type="video/ogg">
+            Seu navegador não suporta o elemento de vídeo. <a href="media/meu-video.mp4">Clique aqui para baixar!</a>
+        </video>
+    </p>
+    <h2>Inserindo videos do YouTube / vimeo</h2><!--No youtube ou no viemo ao clicar em compartilhar, exste a oção incorporar HTML-->
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=UkNH_XuNmjXhl9no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+</body>
+</html>

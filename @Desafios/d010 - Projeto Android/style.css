@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:"Idroid";
+    src: url("fontes/idroid.otf") format("opentype");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8E7C2;
+}
+header {
+    background-image: linear-gradient(to bottom,#0C542B ,#4fd188);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    outline: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+h2 {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav#menu > a{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 12px;
+}
+
+nav#menu > a:hover {
+    background-color: #0C542B;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+main {
+    background-color: #f0f2f5;
+    margin: 0px 100px 0px 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.subtitulos {
+    margin: 15px 10px 10px 30px;
+}
+h3 {
+    font-family: "Idroid", sans-serif;
+    color: #0C542B;
+    padding-top: 20px;       
+}
+h4 {
+    font-family: "Idroid", sans-serif;
+    color: #0C542B;
+    background-image: linear-gradient(to right,#1bb35d8a ,#7fe1a900);
+    width: 60%;
+}
+p{
+    text-align: justify;
+    margin: 10px 30px 10px 30px;
+
+}
+.picture {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
+
+.negritoVerde {
+    font-weight: bold;
+    color: #0C542B;
+}
+
+section#aprenderMais {
+    background-color: #d4f0e0;
+    margin: 20px 30px 20px 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h5 {
+    background-color: #0C542B;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    
+}
+ul#listaVersoes {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 50px 10px 50px;
+
+}
+
+.linkExterno {
+    text-decoration: none;
+    color: #0C542B;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0C542B;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    outline: 10px;
+}

@@ -1,0 +1,74 @@
+@charset "UTF-8"; 
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #401D15;
+}
+
+header{
+    background-color: #732716;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px; /*border-radius:50% -> é possivel criar um circulo*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+header > nav {
+    background-color: #D9B448;
+    padding: 10px;
+    margin: 10px;
+    width: 240px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+    
+
+}
+header > nav > a {
+    text-decoration: none;
+    color: #401D15;
+    font-weight: bold;
+    text-align: center;
+    margin: 1px;
+}
+header > nav > a:hover {
+    color: #732716;
+    background-color: #D9B448;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px
+}
+
+h1 {
+    color: #D9B448;
+    font-size: 4em;
+    text-align: center;
+}
+main > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+footer {
+    background-color: #732716;
+    padding: 1px;
+    margin: 0px;
+    text-align: center;
+}
+p#direitosAutorais {
+    color: #D9B448;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+.links {
+    display: inline-block;
+    margin: 0 10px;
+    color: #D9B448;
+    text-decoration: none;
+}
+.links:hover {
+    text-decoration: underline;
+}

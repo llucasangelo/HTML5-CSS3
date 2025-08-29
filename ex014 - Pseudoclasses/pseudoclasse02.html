@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        div > p{    /*o p é filho da div, ou seja todo paragrafo que estiver dentro de uma div fiará escondido*/
+            display: none;
+        } 
+        div:hover > p { /*aqui temos a pseudo-classe, que faz com que o paragrafo apareça quando o mouse estiver sobre a div*/
+            display: block;
+            color: rgb(0, 0, 255);
+        }
+        div:hover { 
+            color: rgb(255, 0, 0); 
+        }
+    </style>
+</head>
+<body>
+    <!--Inicio de um menu-->
+    <h1>Exemplo de Houver</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    /*pseudo-casse definem estados de elementos dentro da HTML
+    
+    pseudo-elementos mexem diretamente no conteúdo classes, IDs */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+        color: rgb(255, 0, 0);
+        text-decoration: none; /* Remove o sublinhado padrão dos links */
+    }
+
+    a:hover { /* A pseudo-classe :hover altera o estilo do link quando o mouse passa sobre ele */
+        color: rgb(0, 0, 255); /* Muda a cor do texto para azul */
+        text-decoration: underline; /* Adiciona um sublinhado ao link */
+    }
+    a:visited { /* A pseudo-classe :visited altera o estilo dos links visitados */
+        color: rgb(83, 0, 0); /* Muda a cor do texto para roxo */
+    }
+    a:active { /* A pseudo-classe :active altera o estilo do link quando ele é clicado */
+        color: rgb(0, 255, 0); /* Muda a cor do texto para verde */
+    }
+    .especial{
+        font-weight: bold; /* Deixa o texto em negrito */
+        font-size: 1.2em; /* Aumenta o tamanho da fonte para 1.2 vezes o tamanho original */
+    }
+
+    .especial::after { /* A pseudo-elemento ::after insere conteúdo após o elemento */
+        content: " (clique aqui)"; /* Adiciona o texto " (clique aqui)" após o link */
+        font-size: 0.8em; /* Define o tamanho da fonte para 80% do tamanho original */
+        color: gray; /* Define a cor do texto para cinza */
+    }
+
+</style>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

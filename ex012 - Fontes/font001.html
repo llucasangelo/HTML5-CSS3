@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* o VS conde vai sugerir Safes Combinations (fontes que existem na maioria dos dispositivos)*/
+            font-size: 16px; /* tamanho da fonte padrão */
+
+            /*
+                MEDIDAS ABSOLUTAS:
+                px (pixels), pt (pontos), cm (centímetros), in (polegadas)
+
+                MEDIDAS RELATIVAS:
+                em (relativo ao tamanho da fonte do elemento pai), rem (relativo ao tamanho da fonte do elemento raiz), % (porcentagem do tamanho do elemento pai)
+
+                MAIS USADAS:
+                - px: pixels, unidade fixa, não se adapta a diferentes tamanhos de tela.
+                - em: relativo ao tamanho da fonte do elemento pai, se adapta a diferentes tamanhos de tela.
+                - 16px geralmente = 1em 
+                
+                shorthand:
+                font: [tamanho] [estilo] [peso] [familia];
+                font: 16px Arial, sans-serif; // tamanho, familia
+                */
+        }
+        h1, h2 {
+            font-family: 'Courier New', Courier, monospace; /* fontes monoespaçadas */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem voluptatum nesciunt quidem cupiditate nisi minima eos excepturi itaque praesentium, error, accusamus, temporibus iusto vero placeat reprehenderit. Eos, deleniti odio?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem enim eius modi quae cupiditate id minus assumenda corrupti, maxime in consequuntur quidem quasi qui unde labore nostrum ipsam magnam sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, inventore omnis magnam ullam officiis perferendis minima quo aliquid aliquam temporibus repellat! Id incidunt facilis ipsum eaque nobis beatae assumenda quas.</p><p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae libero veritatis asperiores. Quas dolor totam error nobis esse nihil reprehenderit impedit qui. Voluptatem enim nihil maiores vel distinctio dolorem.
+    </p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sed modi laudantium reprehenderit sint amet unde sapiente, dignissimos enim veniam incidunt accusamus, ipsum eaque autem minima labore nulla. Nemo, vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit error consequuntur officiis. In sequi, omnis vel facilis dolorum eum quia. In obcaecati odit vitae suscipit culpa illum consequatur quas.</p>
+</body>
+</html>

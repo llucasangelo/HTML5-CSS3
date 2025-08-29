@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+    Em HTML é id = Em CSS é # (unico)
+    Em HTML é class = Em CSS é . (multiplos)
+    e posso usar id e class juntos, porem o id tem mais prioridade que a class.
+    Exemplo: <h1 id="titulo" class="destaque">Título</h1>
+    mas lembre-se que id é unico, então não pode repetir o mesmo id em outro elemento.
+    Classes podem ser repetidas em vários elementos.
+
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #2F4673, #949BA6); ;
+    color: #0D0D0D;
+    margin: 0;
+    padding: 0;
+    
+}
+main{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #1a263f77;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    text-align: justify;
+}
+h1 {
+      text-align: center;
+}
+h1#titulo {
+    color: #ffffff;
+    text-align: center;
+    background-color: #64758C;
+}
+
+.basico{
+    color:#3dc236 ; 
+}
+
+.intermediario{
+    color:#c2c036 ; 
+}
+.avançado{
+    color:#c23636 ; 
+}
+.destaque{
+    background-color: #3dc2366e;
+}
