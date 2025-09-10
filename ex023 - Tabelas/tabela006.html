@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .cinza {
+            background-color: gray;
+            color: white;
+        }
+        .materia {
+            text-align: left;
+            padding-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seu Boletim Escolar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="cinza" scope="col">Área</th>
+                <th rowspan="2" class="cinza" scope="colgroup">Disciplinas</th>
+                <th colspan="2" class="cinza" scope="col">Notas</th>
+                <th rowspan="2" class="cinza" scope="colgroup">Média</th>
+            </tr>
+            <tr>
+                <th class="cinza" scope="colgroup">Nota 1</th>
+                <th class="cinza" scope="colgroup">Nota 2</th>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td class="materia">Matemática</td>
+                <td>5.5</td>
+                <td>7.6</td>
+                <td>6.6</td>
+            </tr>
+            <tr>
+                <td class="materia">Física</td>
+                <td>4.5</td>
+                <td>9.0</td>
+                <td>6.8</td>
+            </tr>
+            <tr>
+                <td class="materia">Química</td>
+                <td>7.0</td>
+                <td>7.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td class="materia">Biologia</td>
+                <td>8.0</td>
+                <td>8.5</td>
+                <td>8.3</td>
+            </tr>
+            <tr>
+                <th colspan="4" style="text-align: left;" class="cinza" scope="row">Média de exatas</th>
+                <td class="cinza">3.8</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td class="materia">História</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td class="materia">Geografia</td>
+                <td>10.0</td>
+                <td>7.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <th colspan="4" style="text-align: left;" class="cinza" scope="row">Média de Humanas</th>
+                <td class="cinza">8.5</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
