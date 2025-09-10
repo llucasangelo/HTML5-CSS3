@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bolder;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .destaque {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup> <!--são 4 col pq são 4 colunas mas posso ter menos utilizando o span-->
+            <col class="destaque">
+            <col>
+            <col class="destaque">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td>Luana</td>
+                <td>F</td>
+                <td>23</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Wagner</td>
+                <td>M</td>
+                <td>44</td>
+                <td>Advogado</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td>F</td>
+                <td>43</td>
+                <td>Farmacêutica</td>
+            </tr>
+        </thead>
+
+    </table>
+</body>
+</html>
