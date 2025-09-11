@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 80vh;
+            height: 400px;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes com iframe</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consectetur fugiat iure sapiente reiciendis labore totam libero. Laborum numquam et totam quasi nam nobis dicta enim aliquam molestias, perferendis incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptatum, esse deserunt maiores repudiandae inventore ex qui adipisci aliquid asperiores amet fuga quidem est ab unde dolores dolorem numquam facilis.</p>
+    <ul>
+        <li><a href="páginas/pag001.html" target="tela">Página 01</a></li>
+        <li><a href="páginas/pag002.html" target="tela">Página 02</a></li>
+        <li><a href="#" target="tela">Página 03</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur non facere omnis, vitae culpa eos ullam quam necessitatibus error assumenda id esse eligendi! Facilis labore consequatur velit provident nisi est?</p>
+
+    <!--Em src eu posso criar um outro HTML e deixa-lo como padrão ou posso utilizar srcdoc que me permite trabalhar com os recursos da propria HTML-->
+
+    <iframe name="tela" srcdoc="<h1>Escolha uma das opções acima</h1>"> 
+        <p>Seu navegador não suporta esse tipo de conteúdo</p>
+    </iframe>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, rerum blanditiis nostrum ducimus optio dolorem, earum voluptas necessitatibus tenetur mollitia quia. Vero maiores quaerat repellendus tenetur molestias incidunt dolorum excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius voluptatem nam dolores. Quam quas reiciendis odit beatae sit ad itaque quos deserunt molestiae, corrupti praesentium dignissimos eligendi, aliquid eveniet!</p>
+    
+</body>
+</html>
