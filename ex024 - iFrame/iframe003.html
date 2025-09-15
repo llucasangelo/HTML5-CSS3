@@ -23,13 +23,13 @@
     <ul>
         <li><a href="páginas/pag001.html" target="tela">Página 01</a></li>
         <li><a href="páginas/pag002.html" target="tela">Página 02</a></li>
-        <li><a href="#" target="tela">Página 03</a></li>
+        <li><a href="páginas/pag003.html" target="tela">Página 03</a></li>
     </ul>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur non facere omnis, vitae culpa eos ullam quam necessitatibus error assumenda id esse eligendi! Facilis labore consequatur velit provident nisi est?</p>
 
     <!--Em src eu posso criar um outro HTML e deixa-lo como padrão ou posso utilizar srcdoc que me permite trabalhar com os recursos da propria HTML-->
 
-    <iframe name="tela" srcdoc="<h1>Escolha uma das opções acima</h1>"> 
+    <iframe name="tela" srcdoc="<h1>Escolha uma das opções acima</h1>" sandbox="allow-same-origin allow-scripts" referrerpolicy="no-referrer">  <!--Proteção para colocar sites de terceiros em um iframe-->
         <p>Seu navegador não suporta esse tipo de conteúdo</p>
     </iframe>
     
