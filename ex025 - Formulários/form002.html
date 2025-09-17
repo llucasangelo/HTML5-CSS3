@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+
+    <!--Atributos importantes para os inputs
+        1- required - campo obrigatório
+        2- minlength - tamanho mínimo
+        3- maxlength - tamanho máximo
+        4- placeholder - texto de ajuda
+        5- size - tamanho da caixa de texto (em caracteres)
+        6- autocomplete - ajuda na digitação (preenchimento automático)
+            - on - ativa o preenchimento automático (padrão)
+            - off - desativa o preenchimento automático
+            - username - sugere nomes de usuário
+            - current-password - sugere senhas salvas
+            - new-password - sugere novas senhas -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="20" placeholder="Digite seu usuário" autocomplete="username" size="20">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="Digite sua senha" autocomplete="current-password" size="20">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

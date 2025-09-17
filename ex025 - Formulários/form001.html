@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+        <!--O label é importante para relacionar a etiquenta com o input-->
+        <!--Existem 2 metodos para envio de formulários
+            1- GET- envia os dados pela URL (padrão)
+                -Não utilizado para dados sensíveis (senhas, cartões de crédito, etc)
+                -Limite de caracteres (2048)
+            2- POST- envia os dados de forma oculta na URL (mais seguro) - mas não 100% seguro
+                -Sem limite de caracteres
+                -Utilizado para dados sensíveis
+                -Mas para a criptografia dos dados, é necessário o uso do protocolo HTTPS
+        -->
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+</body>
+</html>
