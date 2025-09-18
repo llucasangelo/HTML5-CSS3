@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    caption {
+        padding: 10px;
+        font-weight: bolder;
+    }
+    thead{
+        padding-right: 100px;
+    }
+    tbody > tr:nth-child(2n){
+        background-color: lightgray;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        }

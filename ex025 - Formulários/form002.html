@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulários</title>
+    
 </head>
 <body>
     <h1>Teste de formulários</h1>
@@ -21,19 +22,20 @@
             - current-password - sugere senhas salvas
             - new-password - sugere novas senhas -->
 
-    <form action="cadastro.php" method="post" autocomplete="on">
+    <form action="scripts/cadastro.js" method="post" autocomplete="on" onsubmit="return cadastrar(event)">
         <p>
-            <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="20" placeholder="Digite seu usuário" autocomplete="username" size="20">
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usu" id="iusuario" required minlength="8" maxlength="20" placeholder="Digite seu usuário" autocomplete="username" size="20">
         </p>
         <p>
             <label for="isenha">Senha:</label>
             <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="Digite sua senha" autocomplete="current-password" size="20">
         </p>
         <p>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" onclick="cadastrar()">
             <input type="reset" value="Limpar">
         </p>
     </form>
+    <script src="scripts/cadastro.js"></script>
 </body>
 </html>
