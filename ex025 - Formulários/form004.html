@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <fieldset> <!--Agrupar formulários-->
+        <legend>Dados pessoais</legend>
+        <form action="scripts/cadastro.js" method="get">
+            <p>
+                <label for="iNome">Nome: </label>
+                <input type="text" name="nome" id="iNome" required minlength="3" maxlength="50" placeholder="Digite seu nome completo" size="30" autocomplete="on">
+            </p>
+            <p>
+                <!--É possivel definir um padrão para email ou telefone "meio que verificar que é valido" com expressões regulares ou RegEx
+                    exemplo: pattern="^\d{4,5}-[0-9]{4}$" para telefone
+                -->
+                <label for="iEmail">Email: </label>
+                <input type="email" name="email" id="iEmail" required minlength="5" maxlength="50" placeholder="Digite seu email" size="30" autocomplete="on">
+            </p>
+            <P>
+                <label for="iTel">Telefone: </label>
+                <input type="tel" name="tel" id="iTel" required minlength="8" maxlength="15" placeholder="Digite seu telefone" size="15" autocomplete="on" pattern="^\d{4,5}-\d{4}$">
+            </P>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </form>
+    </fieldset>
+</body>
+</html>

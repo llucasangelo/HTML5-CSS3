@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="scripts/cadastro.js" method="get">
+        <h1>Exemplo de Formulário</h1>
+
+        <!--Inportante que cada radio ou checkbox tenha o seu respectivo label se não é preciso clicar exatamente no checbox-->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label><br>
+
+            <!--Para que o Radio fique intertravado basta possuir o mesmo name-->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes</legend>
+
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label><br>
+
+            <input type="checkbox" name="bas" id="ibas" checked> <label for="ibas">Basquete</label><br>
+            <!--Para que o item ja inicie marcado basta colocar um checked-->
+
+
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label><br>
+
+            <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Volei</label><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Outros formulários</legend>
+            <p>
+                <label for="icor">Cor: </label><input type="color" name="cor" id="icor" value="#ff0000"> <!--O value define a cor inicial-->
+            </p>
+            <p>
+                <label for="inivel">Nível de satisfação: </label> <input type="range" name="nivel" id="inivel" min="0" max="10" step="1" value="5"> <!--O step define o intervalo entre os valores-->
+            </p>
+            <p>
+                <label for="iarquivo">Anexar </label>
+                <input type="file" name="arquivo" id="iarquivo" multiple> <!--O multiple permite selecionar mais de um arquivo
+                para enviar arquivos utilizar o metodo POST-->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
