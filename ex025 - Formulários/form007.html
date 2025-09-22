@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="scripts/cadastro.js" method="get">
+
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="n1" id="in1" required>
+        </p>
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" required>
+        </p>
+        <p>
+            <label for="iRes">Resultado: </label>
+            <output name="res" id="iRes">0</output>
+        </p>
+        <p>
+            <label for="inum">Valor: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" step="1" value="5" oninput="ival.innerHTML = Number(inum.value)">
+
+            <output id="ival">5</output>
+        </p>
+
+    </form>
+    
+</body>
+<script>
+    const in1 = document.getElementById('in1')
+    const in2 = document.getElementById('in2')
+    const iRes = document.getElementById('iRes')
+
+    function calcular() {
+        let n1 = Number(in1.value)
+        let n2 = Number(in2.value)
+        let res = n1 + n2
+        iRes.value = res
+    }
+
+    in1.addEventListener('input', calcular)
+    in2.addEventListener('input', calcular)
+</script>
+</html>

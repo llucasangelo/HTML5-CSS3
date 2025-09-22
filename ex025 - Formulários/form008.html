@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="scripts/cadastro.js" method="get">
+        <p>
+            <label for="iAno">Ano de nascimento: </label>
+            <input type="number" name="ano" id="iAno" min="1900" max="2025" step="1" required>
+        </p>
+        <p>
+            <label for="iIdade">Idade: </label>
+            <output id="iIdade">0</output>
+        </p>
+        <p>
+            <input type="button" value="Calcular Idade" onclick="calcularIdade()">
+        </p>
+    </form>
+    <script>
+        let iAno = document.getElementById('iAno')
+        let iIdade = document.getElementById('iIdade')
+        let anoAtual = new Date().getFullYear()
+        
+        function calcularIdade() {
+            let nasc = Number(iAno.value)
+            let idade = anoAtual - nasc
+            iIdade.innerHTML = idade >= 0 ? idade : 0
+        }
+    </script>
+</body>
+</html>
