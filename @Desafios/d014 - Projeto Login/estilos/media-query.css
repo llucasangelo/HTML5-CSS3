@@ -5,3 +5,14 @@
        - Desktops: de 992px até 1200px
        - Grandes telas: acima de 1200px
 */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section{
+        width: 400px;
+        height: 600px;
+    }
+    img{
+       float: left;
+    }
+
+}
