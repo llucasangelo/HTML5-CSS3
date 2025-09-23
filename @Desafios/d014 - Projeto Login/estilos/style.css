@@ -73,6 +73,11 @@ div.campo input{
     padding: 4px;
     transform: translateY(-11.8px);
 }
+
+div.campo > input:focus-within{
+    background-color: white;
+} /*Era pra ficar branco quando clicar*/
+
 input#iEntrar{
     display: block;
     width: 240px;
