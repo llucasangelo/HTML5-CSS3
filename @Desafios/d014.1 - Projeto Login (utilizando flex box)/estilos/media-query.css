@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*
+    Typical Divice Breakpoints
+       - Tablets: de 768px até 992px
+       - Desktops: de 992px até 1200px
+       - Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section{
+        width: 616px;
+        height: 280px;
+    }
+    section img{
+       float: left;
+        display: block;
+        margin: 20px auto;
+        width: 30%;
+        height: 280px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        margin: 0;
+        border-radius: 20px 0 0 20px;
+    }
+
+    section h1 {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    section p{
+        margin-left: 200px;
+        padding: -10px;
+        font-size: 0.8em;
+    }
+    form{
+        float: right;
+        height: 100%;
+        padding: 10px;
+    }
+    form > div.campo{
+        display: block;
+        width: 400px;
+    }
+    input#iEntrar{
+        display: block;
+        width: 400px;
+        height: 40px;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    a{
+         width: 400px;
+    }   
+}
+@media screen and (min-width: 992px) {
+    section{
+        width: 950px;
+        height: 350px;
+    }
+    section img{
+        float: right;
+        display: block;
+        margin: 20px auto;
+        width: 50%;
+        height: 350px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        margin: 0;
+        border-radius: 0 20px 20px 0;
+    }
+     section h1 {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    section p{
+        margin-right: 500px;
+        margin-left: 15px;
+        padding: -10px;
+        font-size: 0.8em;
+    }
+    form{
+        float: left;
+        height: 100%;
+        padding: 10px;
+    }
+    form > div.campo{
+        display: block;
+        width: 440px;
+    }
+    input#iEntrar{
+        display: block;
+        width: 440px;
+        height: 40px;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    a{
+         width: 440px;
+    }   
+}

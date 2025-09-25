@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem"><img src="imagens/imagem.jpg" alt="Paisagem Login"></div>
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <form action="script.js" method="post">
+                <div class="campo">
+                    <label for="iEmail"><span class="material-symbols-outlined">account_circle</span></label>
+                    <input type="email" name="email" id="iEmail" placeholder="Digite seu e-mail" required><br>
+                </div>
+                <div class="campo">
+                    <label for="iSenha"><span class="material-symbols-outlined">lock</span></label>
+                    <input type="password" name="senha" id="iSenha" placeholder="Digite sua senha" required><br>
+                </div>
+                <input type="button" id="iEntrar" value="Entrar"><br>
+                <a href="#">Esqueci minha senha <span class="material-symbols-outlined" id="mail">Mail</span></a>
+            </form>
+        </section>
+    </main>    
+</body>
+
+</html>
